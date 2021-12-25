@@ -1,11 +1,11 @@
 pipeline {
-    agent{
+    agent {
         docker{
             image 'python:alpine'
             args '-u root'
         }
     }
-    stages{
+    stages {
         stage("Prepare environment"){
             steps{
                 sh 'apk add git'
