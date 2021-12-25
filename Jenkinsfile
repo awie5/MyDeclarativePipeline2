@@ -17,8 +17,8 @@ pipeline {
                 sh 'pip install -r content-pipelines-cje-labs/lab3_lab4/dog_pics_downloader/requirements.txt'
             }
         }
-        stage("Test code"){
-            steps{
+        stage("Test code") {
+            steps {
                 sh 'python content-pipelines-cje-labs/lab3_lab4/dog_pics_downloader/dog_pic_get_class.py'
             }
         }
